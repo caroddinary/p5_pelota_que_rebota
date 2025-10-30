@@ -30,6 +30,6 @@ function draw(){
      if(posy>height - rad || posy< rad){
         vely *= -1;
     }
+    
     circle(posx, posy, diam);
- 
 }
