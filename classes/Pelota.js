@@ -11,7 +11,7 @@ class Pelota{
     this.velx= random(-5, 5);
     this.vely= random(-5, 5);
 
-    this.nuevoColor = color(random(10,100),random(50, 255),random(40,200),100);
+    this.nuevoColor = color(random(30,100),random(50, 200),random(40,200),100);
 
     }
     actualizar(){
@@ -29,8 +29,8 @@ class Pelota{
     visualizar(){
 
         fill(this.nuevoColor);
-        stroke("#ffdd007e#");
-        strokeWeight(5);
+        stroke("#1c0fd2ff#");
+        strokeWeight(2);
         circle(this.posx, this.posy, this.diam);
     }
 }
