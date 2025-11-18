@@ -8,8 +8,8 @@ class Cuadrado{
     this.posx=random(this.mitad, width - this.mitad);
     this.posy=random(this.mitad, height - this.mitad);
 
-    this.velx= random(-5, -3);
-    this.vely= random(-5, -3);
+    this.velx= random(0, 0);
+    this.vely= random(-3, -1);
 
     this.nuevoColor = color(random(100,170), random(180,240), random(220,255), 255);
 
