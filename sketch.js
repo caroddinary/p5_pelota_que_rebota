@@ -1,7 +1,7 @@
-const NP = 500;
+const NP = 200;
 let pelotas = [];  
 
-const NC = 50;
+const NC = 300;
 let cuadrados =[];
 
 function setup(){
@@ -21,7 +21,7 @@ function setup(){
 
 
 function draw(){
-    background(150);
+    background(30);
 
     for(let i=0; i < NP; i++){
         pelotas[i].actualizar();

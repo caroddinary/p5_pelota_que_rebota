@@ -2,16 +2,16 @@ class Pelota{
     
     constructor(){
   
-    this.diam = random(10, 100);
+    this.diam = random(150,250);
     this.rad = this.diam /2;
 
     this.posx=random(this.rad, width - this.rad);
     this.posy=random(this.rad, height - this.rad);
 
-    this.velx= random(-5, 5);
-    this.vely= random(-5, 5);
+    this.velx= random(-3, 3);
+    this.vely= random(-3, 3);
 
-    this.nuevoColor = color(random(30,100),random(50, 200),random(40,200),100);
+    this.nuevoColor = color(random(100,220), random(0,80), random(120,255), 100);
 
     }
     actualizar(){
@@ -29,8 +29,8 @@ class Pelota{
     visualizar(){
 
         fill(this.nuevoColor);
-        stroke("#1c0fd2ff#");
-        strokeWeight(2);
+        stroke("#060606ff#");
+        strokeWeight(1);
         circle(this.posx, this.posy, this.diam);
     }
 }

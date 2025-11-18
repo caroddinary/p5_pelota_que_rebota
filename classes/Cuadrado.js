@@ -2,16 +2,16 @@ class Cuadrado{
     
     constructor(){
   
-    this.lado = random(10, 100);
+    this.lado = random(10, 20);
     this.mitad = this.lado /2;
 
     this.posx=random(this.mitad, width - this.mitad);
     this.posy=random(this.mitad, height - this.mitad);
 
-    this.velx= random(-5, 2);
-    this.vely= random(-5, 2);
+    this.velx= random(-5, -3);
+    this.vely= random(-5, -3);
 
-    this.nuevoColor = color(random(10,255),random(20, 80),random(40,200),150);
+    this.nuevoColor = color(random(100,170), random(180,240), random(220,255), 255);
 
     }
     actualizar(){
@@ -29,8 +29,8 @@ class Cuadrado{
     visualizar(){
 
         fill(this.nuevoColor);
-        stroke("#ff007bff#");
-        strokeWeight(5);
+        stroke("#38f1f4ff");   // ← corregido
+        strokeWeight(2);
         rectMode(CENTER);
         square(this.posx, this.posy, this.lado);
     }
